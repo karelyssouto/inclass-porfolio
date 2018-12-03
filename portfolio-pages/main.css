@@ -1,0 +1,175 @@
+ *{
+ margin: 0;
+ padding: 0;
+ color: white;
+}
+body{
+    animation: color-change-5x 8s linear infinite alternate both;
+}
+@keyframes color-change-5x {
+  0% {
+    background: #c89696;
+  }
+  25% {
+    background: #9d5d60;
+  }
+  50% {
+    background: #955d57;
+  }
+  75% {
+    background: #c27e63;
+  }
+  100% {
+    background: #dab7b7;
+  }
+}
+
+.section{
+    /* border:solid; */
+    width: 100vw;
+    height: 100vh;
+}
+/* section 1 */
+.container{
+    /* border: solid; */
+    width: 100vw;
+    height: 100vh;
+    font-size: 7em;
+}
+.myName{
+    font-family: 'Fredericka the Great', cursive;
+    /* color: #955d57; */
+    color: white;
+    animation: text-pop-up-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+/* keyframes from animista.com */
+@keyframes text-pop-up-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+/* nav */
+.li{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: .6em;
+    display: inline;
+    color: rgb(224, 194, 194);
+}
+.li:hover{
+    color: white;
+    text-decoration-line: underline ;
+}
+/* about section */
+.header{
+    padding-top: 5%;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 4em;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+/* socialNav */
+.socialNav{
+    position: fixed;
+    top:40%;
+    transition: .6s;
+    width:65px;
+}
+.socialNav li{
+    padding:15px;
+    list-style: none;
+}
+.socialNav li:hover{
+    opacity: 0.5;
+}
+.socialNav li:nth-child(1){
+    background: #000;
+}
+.socialNav li:nth-child(2){
+    background: #005bb6;
+}
+.socialNav li:nth-child(3){
+    background: #dd4b39;
+}
+.socialNav li:nth-child(4){
+    background: #00aced;
+}
+/* section 2 */
+.column{
+/* border: solid; */
+height: 60vh;
+}
+img{
+    padding: 10%;
+    filter: blur(4px);
+}
+img:hover{
+    filter: blur(0);
+}
+.content{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+}
+.p{
+    padding-top: 5%;
+    padding-left: 25%;
+}
+.skills{
+    color:#dab7b7;
+}
+.content li{
+    list-style: none;
+}
+
+/* portfolio section */
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    /* border:solid; */
+    height: 80vh;
+}
+.portfolio img{
+    filter: none;
+}
+.project{
+height: 5vh;
+padding:0;
+}
+/* contact section */
+#section4{
+  padding-top: 20%;
+}
+.container.field{
+    margin-left: 25%;
+    height: 50vh;
+
+}
+.label{
+    font-family: 'Open Sans Condensed', sans-serif;
+    animation: none;
+    text-align: initial;
+}
